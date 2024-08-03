@@ -1,12 +1,15 @@
-version: 1
+version: 1.0
 frontend:
-    phases:
-        build:
-            commands:
-                - ""
-    artifacts:
-        baseDirectory: /
-        files:
-            - '**/*'
-    cache:
-        paths: []
+  phases:
+    preBuild:
+      commands:
+        - echo "Starting pre-build phase"
+    build:
+      commands:
+        - echo "Starting build phase"
+  artifacts:
+    baseDirectory: /
+    files:
+      - '**/*'
+  cache:
+    paths: []
